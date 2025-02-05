@@ -5,5 +5,13 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project nx-playground-react-app --web",
-  "targets": {}
+  "targets": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "options": {
+        "push": false,
+        "tags": ["nx-playground-app:latest"]
+      }
+    }
+  }
 }
