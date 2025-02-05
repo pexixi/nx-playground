@@ -4,13 +4,13 @@
   "sourceRoot": "apps/nx-playground-react-app/src",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project nx-playground-react-app --web",
   "targets": {
     "container": {
       "executor": "@nx-tools/nx-container:build",
       "options": {
         "push": false,
-        "tags": ["nx-playground-app:latest"]
+        "tags": ["nx-playground-app:latest"],
+        "dockerfile": "apps/nx-playground-react-app/Dockerfile"
       }
     }
   }
